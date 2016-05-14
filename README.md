@@ -14,11 +14,16 @@ This app demos the life cycle of activity, fragment and view.
 #### 5. click back button (destroy)
 	onPause() -> onStop() -> onDestroy()
 #### 6. click home button (pause)
-	onPause() -> onStop
+	onPause() -> onStop()
 #### 7. click overview button (pause)
-	onPause() -> onStop
+	onPause() -> onStop()
 	
 ## Fragment
-
+#### 1. same as activity
 
 ## Custom view
+#### 1. create new view
+	onFinishInflate() -> onAttachedToWindow()
+#### 2. destroy a view
+	onDetachedFromWindow()
+
