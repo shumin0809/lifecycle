@@ -21,17 +21,17 @@ public class LifeCycleView extends FrameLayout {
 
     public LifeCycleView(Context context) {
         super(context);
-        Log.d("ViewLifeCycle", "FirstView1");
+        Log.d("LifeCycleView", "(Context context)");
     }
 
     public LifeCycleView(Context context, AttributeSet attrs) {
         super(context, attrs);
-        Log.d("ViewLifeCycle", "FirstView2");
+        Log.d("LifeCycleView", "(Context context, AttributeSet attrs)");
     }
 
     public LifeCycleView(Context context, AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
-        Log.d("ViewLifeCycle", "FirstView3");
+        Log.d("LifeCycleView", "(Context context, AttributeSet attrs, int defStyleAttr)");
     }
 
     public void init() {
@@ -44,7 +44,7 @@ public class LifeCycleView extends FrameLayout {
     @Override
     protected void onFinishInflate() {
         super.onFinishInflate();
-        Log.d("ViewLifeCycle", "FirstView onFinishInflate");
+        Log.d("LifeCycleView", "onFinishInflate");
     }
 
     /*
@@ -53,7 +53,7 @@ public class LifeCycleView extends FrameLayout {
     @Override
     protected void onAttachedToWindow() {
         super.onAttachedToWindow();
-        Log.d("ViewLifeCycle", "FirstView onAttachedToWindow");
+        Log.d("LifeCycleView", "onAttachedToWindow");
     }
 
     /*
@@ -62,7 +62,7 @@ public class LifeCycleView extends FrameLayout {
     @Override
     protected void onDetachedFromWindow() {
         super.onDetachedFromWindow();
-        Log.d("ViewLifeCycle", "FirstView onDetachedFromWindow");
+        Log.d("LifeCycleView", "onDetachedFromWindow");
     }
 
     /*
@@ -71,7 +71,7 @@ public class LifeCycleView extends FrameLayout {
     @Override
     protected void onWindowVisibilityChanged(int visibility) {
         super.onWindowVisibilityChanged(visibility);
-        Log.d("ViewLifeCycle", "FirstView onWindowVisibilityChanged");
+        Log.d("LifeCycleView", "onWindowVisibilityChanged");
     }
 
     /*
