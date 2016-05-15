@@ -9,7 +9,7 @@ import android.view.ViewGroup;
 import com.shumin.lifecycle.ui.component.CustomViewPagerEnum;
 import com.shumin.lifecycle.ui.component.LifeCycleView;
 import com.shumin.lifecycle.ui.component.SecondView;
-import com.shumin.lifecycle.ui.component.AnimationView;
+import com.shumin.lifecycle.ui.component.ThirdView;
 
 /**
  * Created by shumin on 5/14/16.
@@ -31,13 +31,12 @@ public class ViewStatePagerAdapter extends PagerAdapter {
         switch (customViewPagerEnum) {
             case FIRST:
                 layout = (LifeCycleView) inflater.inflate(customViewPagerEnum.getLayoutResId(), container, false);
-                ((LifeCycleView) layout).init();
                 break;
             case SECOND:
                 layout = (SecondView) inflater.inflate(customViewPagerEnum.getLayoutResId(), container, false);
                 break;
             default:
-                layout = (AnimationView) inflater.inflate(customViewPagerEnum.getLayoutResId(), container, false);
+                layout = (ThirdView) inflater.inflate(customViewPagerEnum.getLayoutResId(), container, false);
         }
         container.addView(layout);
         return layout;
@@ -57,4 +56,5 @@ public class ViewStatePagerAdapter extends PagerAdapter {
     public int getCount() {
         return CustomViewPagerEnum.values().length;
     }
+
 }

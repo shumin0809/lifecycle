@@ -34,11 +34,8 @@ public class LifeCycleView extends FrameLayout {
         Log.d("LifeCycleView", "(Context context, AttributeSet attrs, int defStyleAttr)");
     }
 
-    public void init() {
-        ((TextView) findViewById(R.id.first_view_title)).setText("Bang! It's first view");
-    }
-
     /*
+     * will be triggered if call LayoutInflater.inflate(...)
      * Creation : Called after a view and all of its children has been inflated from XML.
      */
     @Override

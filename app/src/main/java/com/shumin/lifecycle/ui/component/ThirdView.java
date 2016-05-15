@@ -10,16 +10,16 @@ import android.widget.RelativeLayout;
  * This class is to show animation of custom view.
  *
  */
-public class AnimationView extends RelativeLayout {
-    public AnimationView(Context context, AttributeSet attrs) {
+public class ThirdView extends RelativeLayout {
+    public ThirdView(Context context, AttributeSet attrs) {
         super(context, attrs);
     }
 
-    public AnimationView(Context context) {
+    public ThirdView(Context context) {
         super(context);
     }
 
-    public AnimationView(Context context, AttributeSet attrs, int defStyleAttr) {
+    public ThirdView(Context context, AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
     }
 }

@@ -17,20 +17,26 @@ public class MainActivity extends BaseActivity {
 
 
     private void setupUi() {
-        findViewById(R.id.launch_fragment_view_pager).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
+        View launchFragment = findViewById(R.id.launch_fragment_view_pager);
+        if (launchFragment != null) {
+            launchFragment.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
 
-            }
-        });
+                }
+            });
+        }
 
-        findViewById(R.id.launch_view_view_pager).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, ViewsViewPagerActivity.class);
-                startActivity(intent);
-            }
-        });
+        View launchView = findViewById(R.id.launch_view_view_pager);
+        if (launchView != null) {
+            launchView.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Intent intent = new Intent(MainActivity.this, ViewsViewPagerActivity.class);
+                    startActivity(intent);
+                }
+            });
+        }
     }
 
 }
