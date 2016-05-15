@@ -38,6 +38,17 @@ public class MainActivity extends BaseActivity {
                 }
             });
         }
+
+        View launchRecyclerView = findViewById(R.id.launch_recycler_view);
+        if (launchRecyclerView != null) {
+            launchRecyclerView.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Intent intent = new Intent(MainActivity.this, RecyclerViewActivity.class);
+                    startActivity(intent);
+                }
+            });
+        }
     }
 
 }

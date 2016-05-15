@@ -14,11 +14,11 @@ import com.shumin.lifecycle.ui.component.ThirdView;
 /**
  * Created by shumin on 5/14/16.
  */
-public class ViewStatePagerAdapter extends PagerAdapter {
+public class ViewsStatePagerAdapter extends PagerAdapter {
 
     private Context mContext;
 
-    public ViewStatePagerAdapter(Context context) {
+    public ViewsStatePagerAdapter(Context context) {
 
         this.mContext = context;
     }

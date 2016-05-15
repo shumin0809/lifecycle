@@ -12,11 +12,11 @@ import com.shumin.lifecycle.ui.fragment.ThirdFragment;
 /**
  * Created by shumin on 5/14/16.
  */
-public class BaseFragmentStatePagerAdapter extends android.support.v4.app.FragmentStatePagerAdapter {
+public class FragmentsStatePagerAdapter extends android.support.v4.app.FragmentStatePagerAdapter {
 
     private final static int PAGES = 3;
 
-    public BaseFragmentStatePagerAdapter(FragmentManager fm) {
+    public FragmentsStatePagerAdapter(FragmentManager fm) {
         super(fm);
     }
 

@@ -20,6 +20,8 @@
 
         <activity android:name=".ui.activity.ViewsViewPagerActivity" />
 
+        <activity android:name=".ui.activity.RecyclerViewActivity" />
+
     </application>
 
 </manifest>
