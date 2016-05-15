@@ -7,7 +7,7 @@ import com.shumin.lifecycle.R;
  */
 public enum  CustomViewPagerEnum {
 
-    FIRST(R.layout.view_first),
+    FIRST(R.layout.view_life_cycle),
     SECOND(R.layout.view_second),
     THIRD(R.layout.view_third);
 

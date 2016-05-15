@@ -22,7 +22,8 @@ public class MainActivity extends BaseActivity {
             launchFragment.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-
+                    Intent intent = new Intent(MainActivity.this, FragmentsViewPagerActivity.class);
+                    startActivity(intent);
                 }
             });
         }
