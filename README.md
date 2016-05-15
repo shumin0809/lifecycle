@@ -17,9 +17,14 @@ This app demos the life cycle of activity, fragment and view.
 	onPause() -> onStop()
 #### 7. click overview button (pause)
 	onPause() -> onStop()
-	
+
 ## Fragment
-#### 1. same as activity
+#### 1. create new fragment
+	onAttach() -> onCreateView() -> onViewCreated() -> onActivityCreated() 
+	-> onViewStateRestored() -> onStart() -> onResume()
+#### 2. delete a fragment
+	onPause() -> onStop() -> onDestroyView() -> onDestroy() -> onDetach()
+#### 3. Fragment's lifecycle is tied to its owning activity
 
 ## Custom view
 #### 1. create new view
