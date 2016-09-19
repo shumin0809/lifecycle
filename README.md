@@ -25,6 +25,7 @@ This app demos the life cycle of activity, fragment and view.
 #### 2. delete a fragment
 	onPause() -> onStop() -> onDestroyView() -> onDestroy() -> onDetach()
 #### 3. Fragment's lifecycle is tied to its owning activity
+#### 4. Activity's lifecycle is not tied to its child fragments
 
 ## Custom view
 #### 1. create new view
